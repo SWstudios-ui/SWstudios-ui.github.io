@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SWStudios</title>
+<meta name="description" content="SWStudios – giochi rilassanti per Android. Sudoku Lore: 250 livelli, musica e suoni ASMR.">
+<link rel="icon" href="sudoku-lore/icona.png">
+<style>
+  :root {
+    --navy: #1F2A44; --navy-deep: #10172A; --orange: #EA580C; --orange-light: #FF8A3D;
+    --teal: #0F9488; --cream: #FFF3E6; --bg: #FFF8F2; --fg: #1F2A44; --muted: #5B4F47; --card: #FFFFFF; --line: #EADCCF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #10172A; --fg: #E8ECF5; --muted: #A9B2C6; --card: #18213A; --line: #2C3A5C; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+  header { background: radial-gradient(circle at 30% 20%, #3A4E85, var(--navy) 45%, var(--navy-deep)); color: #fff; padding: 56px 20px 64px; text-align: center; }
+  header h1 { margin: 0; font-size: clamp(32px, 6vw, 48px); letter-spacing: 2px; }
+  header p { margin: 8px 0 0; color: var(--cream); }
+  main { max-width: 760px; margin: -36px auto 48px; padding: 0 16px; display: grid; gap: 20px; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .app img.cover { width: 100%; display: block; }
+  .app .body { padding: 20px 24px 24px; display: grid; grid-template-columns: 72px 1fr; gap: 16px; align-items: start; }
+  .app .icon { width: 72px; height: 72px; border-radius: 16px; }
+  .app h2 { margin: 0 0 4px; }
+  .app p { margin: 0 0 12px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a { text-decoration: none; font-weight: 700; padding: 8px 16px; border-radius: 999px; }
+  .primary { background: var(--orange); color: #fff; }
+  .secondary { border: 2px solid var(--orange); color: var(--orange); }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 16px 40px; }
+  footer a { color: var(--teal); }
+  @media (max-width: 480px) { .app .body { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>SWStudios</h1>
+  <p>Giochi rilassanti per Android</p>
+</header>
+<main>
+  <article class="app">
+    <img class="cover" src="sudoku-lore/grafica.png" alt="Sudoku Lore – Rilassati, un numero alla volta">
+    <div class="body">
+      <img class="icon" src="sudoku-lore/icona.png" alt="Icona di Sudoku Lore">
+      <div>
+        <h2>Sudoku Lore</h2>
+        <p>Il sudoku che ti rilassa: 250 livelli in 5 difficoltà, musica d'atmosfera e suoni ASMR ad ogni mossa.</p>
+        <div class="links">
+          <a class="primary" href="https://play.google.com/store/apps/details?id=com.swstudios.sudokulore">Google Play</a>
+          <a class="secondary" href="sudoku-lore/privacy.html">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+<footer>
+  Contatti: <a href="mailto:sw.studios.sw@gmail.com">sw.studios.sw@gmail.com</a>
+</footer>
+</body>
+</html>
